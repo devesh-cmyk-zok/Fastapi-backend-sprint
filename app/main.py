@@ -1,5 +1,3 @@
-# till 9:34 & 10:15 to 11:14
-
 from fastapi import FastAPI, status, HTTPException, Depends
 from random import randrange
 from . import models, schemas
@@ -11,7 +9,7 @@ from fastapi.middleware.cors import CORSMiddleware  # CORS is a security feature
 
 print(settings.database_username)  # print the value of the database_username attribute, it will print the value of the environment variable DATABASE_USERNAME
 
-models.base.metadata.create_all(bind=engine)  # create the tables in the database if they don't exist
+#models.base.metadata.create_all(bind=engine)  # create the tables in the database if they don't exist
 
 app = FastAPI()
 
